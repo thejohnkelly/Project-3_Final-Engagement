@@ -6,7 +6,7 @@ You must inspect your traffic capture to answer the following questions:
 1. What is the domain name of the users' custom site?
     - Frank-n-Ted-DC.frank-n-ted.com
 
-![Frank-n-Ted](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/wireshark_Frank-n-Ted.png)
+![Frank-n-Ted](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Network/wireshark_Frank-n-Ted.png)
 
 2. What is the IP address of the Domain Controller (DC) of the AD network?
     - 10.6.12.12
