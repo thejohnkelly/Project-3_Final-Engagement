@@ -11,8 +11,6 @@ You must inspect your traffic capture to answer the following questions:
 2. What is the IP address of the Domain Controller (DC) of the AD network?
     - 10.6.12.12
 
-![Frank-n-Ted IP](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Network/wireshark_FnT-DC-ipaddr.png)
-
 3. What is the name of the malware downloaded to the 10.6.12.203 machine?
     - june11.dll
 
