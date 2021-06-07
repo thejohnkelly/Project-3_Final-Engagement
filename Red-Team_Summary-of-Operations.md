@@ -32,6 +32,8 @@ Command used for vulnerability scan:
 $ nmap -sV --script=vulners -v 192.168.1.110
 ```
 
+![Vulns Scan](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/01.2.1_nmap_full-vulns.png)
+
 - **Target 1**
   - Port 22:
     - **Vulnerability**: CVE-2001-0554
@@ -148,7 +150,7 @@ $ nmap -sV --script=vulners -v 192.168.1.110
     - **Vulnerability**: CVE-2016-5387
       - **Description**: The Apache HTTP Server through 2.4.23 follows RFC 3875 section 4.1.18 and therefore does not protect applications from the presence of untrusted client data in the HTTP_PROXY environment variable, which might allow remote attackers to redirect an application's outbound HTTP traffic to an arbitrary proxy server via a crafted Proxy header in an HTTP request, aka an "httpoxy" issue. NOTE: the vendor states "This mitigation has been assigned the identifier CVE-2016-5387"; in other words, this is not a CVE ID for a vulnerability.
       - **Severity**: High - 8.1 (CVSS 3.0)
-      _ **Mitigation**: Update to the latest version.
+      - **Mitigation**: Update to the latest version.
       
     - **Vulnerability**: CVE-2020-1934
       - **Description**: In Apache HTTP Server 2.4.0 to 2.4.41, mod_proxy_ftp may use uninitialized memory when proxying to a malicious FTP server.
@@ -196,9 +198,9 @@ $ nmap -sV --script=vulners -v 192.168.1.110
       - **Mitigation**: Update to the latest version.
 
     -  **Vulnerability**: CVE-2016-0736
-      - **Description**: In Apache HTTP Server versions 2.4.0 to 2.4.23, mod_session_crypto was encrypting its data/cookie using the configured ciphers with possibly either CBC or ECB modes of operation (AES256-CBC by default), hence no selectable or built in authenticated encryption. This made it vulnerable to padding oracle attacks, particularly with CBC.
-      - **Severity**: High - 7.5(CVSS 3.0)
-      - **Mitigation**: Update to the latest version.
+        - **Description**: In Apache HTTP Server versions 2.4.0 to 2.4.23, mod_session_crypto was encrypting its data/cookie using the configured ciphers with possibly either CBC or ECB modes of operation (AES256-CBC by default), hence no selectable or built in authenticated encryption. This made it vulnerable to padding oracle attacks, particularly with CBC.
+        - **Severity**: High - 7.5(CVSS 3.0)
+        - **Mitigation**: Update to the latest version.
 
     - **Vulnerability**: CVE-2015-3183
       - **Description**: The chunked transfer coding implementation in the Apache HTTP Server before 2.4.14 does not properly parse chunk headers, which allows remote attackers to conduct HTTP request smuggling attacks via a crafted request, related to mishandling of large chunk-size values and invalid chunk-extension characters in modules/http/http_filters.c.
@@ -269,6 +271,9 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
     - **Exploit Used**
       - Inspected source code of service.html within open browser 
         - http://192.168.1.110/service.html
+
+![flag 1](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/10.1_flag1.png)
+
   - `flag2.txt`: fc3fd58dcdad9ab23faca6e9a36e581c
   - `flag3.txt`: fafcolab56659591e7dccf93122776cd2
     - **Exploit Used**
@@ -280,9 +285,16 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
         ```bash
         $ hydra -l michael -P /usr/share/wordlist/rockyou.txt 192.168.1.110 -t 4 ssh
         ```
+
+![flag 2](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/10.2_flag2.png)
+
+![flag 3](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/10.4_flag3.png)
+
   - `flag4.txt`: 715dea6c055b9fe3337544932f2941ce
     - **Exploit Used**
       - Sudo privleges to run Python allowed root access through Python shell exploit
         ```bash
         $ sudo python -c 'import pty; pty.spawn("/bin/bash")'
         ```
+
+![flag 4](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/10.5.2_flag4_file.png)

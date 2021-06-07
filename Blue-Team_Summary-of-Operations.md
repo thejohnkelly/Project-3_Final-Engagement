@@ -35,7 +35,7 @@ The following machines were identified on the network:
   - **Purpose**: Exposes a vulnerable WordPress server
   - **IP Address**: 192.168.1.110
 
-![topology](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Network/topology.png)
+![topology](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/topology.png)
 
 ### Description of Targets
 
@@ -59,6 +59,8 @@ nmap -sV 192.168.1.110
 
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 
+![watchers](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/watchers_001.png)
+
 #### **Excessive HTTP Errors**
 Alert 1 is implemented as follows:
   - **Metric**: Packetbeat
@@ -81,7 +83,7 @@ Alert 2 is implemented as follows:
 Alert 3 is implemented as follows:
   - **Metric**: Metricbeats
   - **Threshold**: WHEN max() OF system.process.cpu.total.pct OVER all documents IS ABOVE 0.5 FOR THE LAST 5 minutes
-  - **Vulnerability Mitigated**: DoS attack
+  - **Vulnerability Mitigated**: Denial of Service (DoS) attack
   - **Reliability**: This alert does not  generate lots of false positives or negatives. The alert is highly reliable.
 
 ![CPU Usage Monitor](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/watcher_004_CPU-Usege-Monitor.png)
