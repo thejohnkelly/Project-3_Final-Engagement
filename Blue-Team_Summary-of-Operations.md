@@ -86,7 +86,7 @@ Alert 3 is implemented as follows:
   - **Vulnerability Mitigated**: Denial of Service (DoS) attack
   - **Reliability**: This alert does not  generate lots of false positives or negatives. The alert is highly reliable.
 
-![CPU Usage Monitor](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/watcher_004_CPU-Usege-Monitor.png)
+![CPU Usage Monitor](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/watcher_004_CPU-Usage-Monitor.png)
 
 ### Suggestions for Going Further
 
