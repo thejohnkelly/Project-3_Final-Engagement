@@ -35,7 +35,7 @@ The following machines were identified on the network:
   - **Purpose**: Exposes a vulnerable WordPress server
   - **IP Address**: 192.168.1.110
 
-![topology](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Network/finalproject.png)
+![topology](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Network/topology.png)
 
 ### Description of Targets
 
@@ -66,7 +66,7 @@ Alert 1 is implemented as follows:
   - **Vulnerability Mitigated**: Brute force attack
   - **Reliability**: This alert does not generate a  lot of false positives or negatives. This alert is highly reliable.
 
-<img src=/Volumes/Media_Drive/Cyber/FINAL_PROJECT/screen_grabs/Red-vs-Blue/watcher_003_HTTP-Request_size_Monitor.png>
+![Excessive HTTP Errors](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/watcher_005_Excessive-HTTP-Errors.png)
 
 #### **HTTP Request Size Monitor**
 Alert 2 is implemented as follows:
@@ -75,7 +75,7 @@ Alert 2 is implemented as follows:
   - **Vulnerability Mitigated**: Possible payload
   - **Reliability**: This alert generates lots of false positives and negatives. This alert has medium reliability.
 
-<img src=/Volumes/Media_Drive/Cyber/FINAL_PROJECT/screen_grabs/Red-vs-Blue/watcher_005_Excessive-HTTP-Errors.png>
+![HTTP Request Size Monitor](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/watcher_003_HTTP-Request_size_Monitor.png)
 
 #### **CPU Usage Monitor**
 Alert 3 is implemented as follows:
@@ -84,7 +84,7 @@ Alert 3 is implemented as follows:
   - **Vulnerability Mitigated**: DoS attack
   - **Reliability**: This alert does not  generate lots of false positives or negatives. The alert is highly reliable.
 
-<img src=/Volumes/Media_Drive/Cyber/FINAL_PROJECT/screen_grabs/Red-vs-Blue/watcher_004_CPU-Usege-Monitor.png>
+![CPU Usage Monitor](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/watcher_004_CPU-Usege-Monitor.png)
 
 ### Suggestions for Going Further
 
