@@ -35,7 +35,7 @@ The following machines were identified on the network:
   - **Purpose**: Exposes a vulnerable WordPress server
   - **IP Address**: 192.168.1.110
 
-!(./screen_grabs/Network/finalproject.png)
+![topology](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Network/finalproject.png)
 
 ### Description of Targets
 
