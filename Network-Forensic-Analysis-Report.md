@@ -61,9 +61,9 @@ You must inspect your traffic capture to answer the following questions:
     - Windows username: elmer.blanco
     - OS version: Windows NT 10.0 (Windows 10)
 
-![torrent identified](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Network/wireshark_torrent-identified.png)
+![user name 2](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Network/wireshark_Windows-user-name.png)
 
 2. Which torrent file did the user download?
     - Betty_Boop_Rhythm_on_the_Reservation.avi.torrent
 
-![user name 2](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Network/wireshark_Windows-user-name.png)
+![torrent identified](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Network/wireshark_torrent-identified.png)
