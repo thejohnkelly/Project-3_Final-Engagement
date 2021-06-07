@@ -13,7 +13,7 @@ Nmap scan results for each machine reveal the below services and OS details:
 $ nmap -sV -O 192.168.1.110
 ```
 
-<img src="/Volumes/Media Drive/Cyber/FINAL PROJECT/screen_grabs/Red vs Blue/01.1_nmap-scan">
+![NMap Scan](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/01.1_nmap-scan.png)
 
 This scan identifies the services below as potential points of entry:
 - Target 1
@@ -180,7 +180,7 @@ $ nmap -sV --script=vulners -v 192.168.1.110
       - **Severity**: High - 7.5 (CVSS 3.1)
       - **Mitigation: Update to the latest version.
 
-    - V**ulnerability**: CVE-2017-15710
+    - **Vulnerability**: CVE-2017-15710
       - **Description**: In Apache httpd 2.0.23 to 2.0.65, 2.2.0 to 2.2.34, and 2.4.0 to 2.4.29, mod_authnz_ldap, if configured with AuthLDAPCharsetConfig, uses the Accept-Language header value to lookup the right charset encoding when verifying the user's credentials. If the header value is not present in the charset conversion table, a fallback mechanism is used to truncate it to a two characters value to allow a quick retry (for example, 'en-US' is truncated to 'en'). A header value of less than two characters forces an out of bound write of one NUL byte to a memory location that is not part of the string. In the worst case, quite unlikely, the process would crash which could be used as a Denial of Service attack. In the more likely case, this memory is already reserved for future use and the issue has no effect at all.
       - **Severity**: High - 7.5 (CVSS 3.0)
       - **Mitigation**: Update to the latest version.
@@ -196,9 +196,9 @@ $ nmap -sV --script=vulners -v 192.168.1.110
       - **Mitigation**: Update to the latest version.
 
     -  **Vulnerability**: CVE-2016-0736
-        - **Description**: In Apache HTTP Server versions 2.4.0 to 2.4.23, mod_session_crypto was encrypting its data/cookie using the configured ciphers with possibly either CBC or ECB modes of operation (AES256-CBC by default), hence no selectable or built in authenticated encryption. This made it vulnerable to padding oracle attacks, particularly with CBC.
-        - **Severity**: High - 7.5(CVSS 3.0)
-        - **Mitigation**: Update to the latest version.
+      - **Description**: In Apache HTTP Server versions 2.4.0 to 2.4.23, mod_session_crypto was encrypting its data/cookie using the configured ciphers with possibly either CBC or ECB modes of operation (AES256-CBC by default), hence no selectable or built in authenticated encryption. This made it vulnerable to padding oracle attacks, particularly with CBC.
+      - **Severity**: High - 7.5(CVSS 3.0)
+      - **Mitigation**: Update to the latest version.
 
     - **Vulnerability**: CVE-2015-3183
       - **Description**: The chunked transfer coding implementation in the Apache HTTP Server before 2.4.14 does not properly parse chunk headers, which allows remote attackers to conduct HTTP request smuggling attacks via a crafted request, related to mishandling of large chunk-size values and invalid chunk-extension characters in modules/http/http_filters.c.
