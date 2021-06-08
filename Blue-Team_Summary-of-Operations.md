@@ -59,8 +59,6 @@ nmap -sV 192.168.1.110
 
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 
-![watchers](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/watchers_001.png)
-
 #### **Excessive HTTP Errors**
 Alert 1 is implemented as follows:
   - **Metric**: Packetbeat
@@ -68,7 +66,7 @@ Alert 1 is implemented as follows:
   - **Vulnerability Mitigated**: Brute force attack
   - **Reliability**: This alert does not generate a  lot of false positives or negatives. This alert is highly reliable.
 
-![Excessive HTTP Errors](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/watcher_005_Excessive-HTTP-Errors.png)
+![Excessive HTTP Errors](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/kibana_watcher_Excessive-HTTP-Errors_003.png)
 
 #### **HTTP Request Size Monitor**
 Alert 2 is implemented as follows:
@@ -77,7 +75,7 @@ Alert 2 is implemented as follows:
   - **Vulnerability Mitigated**: Possible payload
   - **Reliability**: This alert generates lots of false positives and negatives. This alert has medium reliability.
 
-![HTTP Request Size Monitor](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/watcher_003_HTTP-Request_size_Monitor.png)
+![HTTP Request Size Monitor](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/kibana_watcher_HTTP-Request_Size_Monitor_003.png)
 
 #### **CPU Usage Monitor**
 Alert 3 is implemented as follows:
@@ -86,20 +84,20 @@ Alert 3 is implemented as follows:
   - **Vulnerability Mitigated**: Denial of Service (DoS) attack
   - **Reliability**: This alert does not  generate lots of false positives or negatives. The alert is highly reliable.
 
-![CPU Usage Monitor](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/watcher_004_CPU-Usage-Monitor.png)
+![CPU Usage Monitor](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/kibana_watcher_CPU-Usage-Monitor_003.png)
 
 ### Suggestions for Going Further
 
 The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the alerts above. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
 
 - Vulnerability 1
-  - **Patch**: Intall fail2ban with `apt-get install fail2ban`
+  - **Patch**: Install fail2ban with `apt-get install fail2ban`
   - **Why It Works**: Fail2ban scans log files (e.g. /var/log/apache/error_log) and bans IP’s that show malicious signs such as too many password failures, seeking for exploits etc.
 
 - Vulnerability 2
   - **Patch**: Deploy software updates as soon as vulnerabilities have been found.
-  - **Why It Works**: TUpdating the software would prevent attacks.
+  - **Why It Works**: Updating the software would prevent attacks.
 
 - Vulnerability 3
-  - **Patch**: Cron jobs can be used to schedule system updates, making sure the system is secure.
-  - **Why It Works**: This would allow employees to continue their jobs without having to worry about updating the systems frequently because cron jobs can be run in the background.
+  - **Patch**: DoS Defense System (DDS)
+  - **Why It Works**: DDS have a purpose-built system that can easily identify and obstruct denial of service attacks at a greater speed than a software based system.

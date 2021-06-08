@@ -13,7 +13,7 @@ Nmap scan results for each machine reveal the below services and OS details:
 $ nmap -sV -O 192.168.1.110
 ```
 
-![NMap Scan](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/01.1_nmap-scan.png)
+![NMap Scan](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/nmap_scan.png)
 
 This scan identifies the services below as potential points of entry:
 - Target 1
@@ -32,7 +32,7 @@ Command used for vulnerability scan:
 $ nmap -sV --script=vulners -v 192.168.1.110
 ```
 
-![Vulns Scan](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/01.2.1_nmap_full-vulns.png)
+![Vulns Scan](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/nmap_vulns.png)
 
 - **Target 1**
   - Port 22:
@@ -272,7 +272,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       - Inspected source code of service.html within open browser 
         - http://192.168.1.110/service.html
 
-![flag 1](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/10.1_flag1.png)
+![flag 1](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/flag1.png)
 
   - `flag2.txt`: fc3fd58dcdad9ab23faca6e9a36e581c
   - `flag3.txt`: fafcolab56659591e7dccf93122776cd2
@@ -286,9 +286,9 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
         $ hydra -l michael -P /usr/share/wordlist/rockyou.txt 192.168.1.110 -t 4 ssh
         ```
 
-![flag 2](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/10.2_flag2.png)
+![flag 2](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/flag2.png)
 
-![flag 3](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/10.4_flag3.png)
+![flag 3](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/flag3.png)
 
   - `flag4.txt`: 715dea6c055b9fe3337544932f2941ce
     - **Exploit Used**
@@ -297,4 +297,4 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
         $ sudo python -c 'import pty; pty.spawn("/bin/bash")'
         ```
 
-![flag 4](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/10.5.2_flag4_file.png)
+![flag 4](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/flag4_file.png)
