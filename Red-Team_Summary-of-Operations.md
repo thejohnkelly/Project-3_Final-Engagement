@@ -269,8 +269,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 - Target 1
   - `flag1.txt`: b9bbcb33e11b8@be759c4e844862482d
     - **Exploit Used**
-      - Inspected source code of service.html within open browser 
-        - http://192.168.1.110/service.html
+      - Inspected source code of service.html within open browser (http://192.168.1.110/service.html)
 
 ![flag 1](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/flag1.png)
 
