@@ -48,7 +48,7 @@ You must inspect your traffic capture to answer the following questions:
 ![Malicious IPs](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Network/wireshark_vuln-win-machines_malicious-ips.png)
 
 4. As a bonus, retrieve the desktop background of the Windows host.
-    - fleshy-in-this-2571786.jpg
+    - empty.gif downloaded from green.mattingsolutions.co (185.243.115.84)
 
 ![background name](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Network/wireshark_vuln-win-machines_desktop-background_source.png)
 ![background image](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Network/wireshark_vuln-win-machines_desktop-background_image.png)
