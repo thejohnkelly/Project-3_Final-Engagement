@@ -286,8 +286,8 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
         $ hydra -l michael -P /usr/share/wordlist/rockyou.txt 192.168.1.110 -t 4 ssh
         ```
 
-![flag 2](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/flag2.png)
-
+![flag 2](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/flag2_cmd.png)
+![flag 3 command](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/flag3_cmd.png)
 ![flag 3](https://github.com/thejohnkelly/FinalProjectReport/blob/main/screen_grabs/Red%20vs%20Blue/flag3.png)
 
   - `flag4.txt`: 715dea6c055b9fe3337544932f2941ce
